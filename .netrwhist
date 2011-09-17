@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/amathew/source/bidder/bidder'
+let g:netrw_dirhist_2='/home/amathew/clean/bidder'
+let g:netrw_dirhist_3='/home/amathew/source/bidder-budget_reduc/bidder'
+let g:netrw_dirhist_4='/home/amathew/tag_versions'
+let g:netrw_dirhist_5='/home/amathew/source/bidder-budget_reduc/common'
+let g:netrw_dirhist_6='/home/amathew/source/bidder/batch-generator'
+let g:netrw_dirhist_7='/home/amathew/source/bidder-budget_reduc2/bidder/cache'
+let g:netrw_dirhist_8='/home/amathew/source/bidderbatchesv2/www/common'
+let g:netrw_dirhist_9='/home/amathew/clean/impbus'

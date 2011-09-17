@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+X	colors/jellybeans.vim	/^fun! s:X(group, fg, bg, attr, lcfg, lcbg)$/;"	f
+color	colors/jellybeans.vim	/^fun! s:color(r, g, b)$/;"	f
+colors_name	colors/jellybeans.vim	/^let colors_name = "jellybeans"$/;"	v
+grey_color	colors/jellybeans.vim	/^fun! s:grey_color(n)$/;"	f
+grey_level	colors/jellybeans.vim	/^fun! s:grey_level(n)$/;"	f
+grey_number	colors/jellybeans.vim	/^fun! s:grey_number(x)$/;"	f
+low_color	colors/jellybeans.vim	/^	let s:low_color = 0$/;"	v
+low_color	colors/jellybeans.vim	/^	let s:low_color = 1$/;"	v
+rgb	colors/jellybeans.vim	/^fun! s:rgb(rgb)$/;"	f
+rgb_color	colors/jellybeans.vim	/^fun! s:rgb_color(x, y, z)$/;"	f
+rgb_level	colors/jellybeans.vim	/^fun! s:rgb_level(n)$/;"	f
+rgb_number	colors/jellybeans.vim	/^fun! s:rgb_number(x)$/;"	f
