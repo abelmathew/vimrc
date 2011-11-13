@@ -50,10 +50,11 @@ set completeopt= "test this one out you might not like it
 set formatoptions=rq "automatically insert comment wrappers on return
 set infercase
 set nowrap
-set expandtab
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
-set textwidth=120
+set textwidth=80
+set noexpandtab 
 
 set foldenable
 set foldmarker={,}
@@ -83,6 +84,8 @@ let mapleader = ","
 map <F6> :!ctags -R --sort=1 --fields=+iaS --extra=+q --c++-kinds=+defgmpstu -f ~/tags/bidder /home/amathew/source/bidder/ |  ctags -R --sort=1 --fields=+iaS --extra=+q --c++-kinds=+defgmpstu -f ~/tags/impbus /home/amathew/source/impbus/<CR> 
 map <F5> :!cscope -R -b <CR> :cs reset <CR>
 map <F7> :make -j 4<CR>
+nnoremap <F2> :set rnu!<CR>
+
 map <Leader>lt :TlistToggle <CR>
 "map <Leader>nt :NERDTree <CR> 
 "possible the greatest map ever found 
