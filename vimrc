@@ -1,14 +1,13 @@
 " Abel Mathew .vimrc 
 
 set nocompatible 
-syntax on 
 
 filetype on
 filetype indent on
 filetype plugin on
 set nocp 
 
-colorscheme dante
+colorscheme inkpot
 set t_Co=256
 
 " Set an orange cursor in insert mode, and a red cursor otherwise.
@@ -51,10 +50,12 @@ set formatoptions=rq "automatically insert comment wrappers on return
 set infercase
 set nowrap
 set tabstop=4
-set softtabstop=4
 set shiftwidth=4
 set textwidth=80
-set noexpandtab 
+autocmd BufNewFile,BufRead *.json set filetype=javascript
+autocmd BufNewFile,BufRead *.spec.template set filetype=spec
+autocmd FileType cc,cpp,c,h set cindent noexpandtab shiftwidth=8 tabstop=8 softtabstop=8
+autocmd FileType make set noexpandtab shiftwidth=8
 
 set foldenable
 set foldmarker={,}
@@ -85,6 +86,7 @@ map <F6> :!ctags -R --sort=1 --fields=+iaS --extra=+q --c++-kinds=+defgmpstu -f 
 map <F5> :!cscope -R -b <CR> :cs reset <CR>
 map <F7> :make -j 4<CR>
 nnoremap <F2> :set rnu!<CR>
+vmap sb :<C-U>!svn blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
 
 map <Leader>lt :TlistToggle <CR>
 "map <Leader>nt :NERDTree <CR> 
@@ -115,3 +117,6 @@ if has("gui_running")
 	set mousehide
 endif
 
+set runtimepath=~/.vim,/usr/share/vim/vimfiles,/usr/share/vim,/usr/share/vim/vim70
+syntax on
+set autoindent
